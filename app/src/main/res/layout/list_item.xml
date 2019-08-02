@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="4dp"
+        app:cardMaxElevation="4dp">
+
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:layout_margin="15dp" android:id="@+id/linearLayout">
+
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:layout_gravity="end">
+
+            <TextView
+                    android:id="@+id/var_id"
+                    android:text="@string/var_id"
+                    android:textColor="@color/colorPrimary"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            <TextView
+                    android:id="@+id/val_id"
+                    android:text="@string/val_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:textColor="@color/back"
+            />
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:paddingTop="10dp">
+
+            <TextView
+                    android:id="@+id/var_from"
+                    android:text="@string/var_from"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:textStyle="bold" android:textColor="@color/back"/>
+
+            <TextView
+                    android:id="@+id/val_from"
+                    android:text="@string/val_from"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:textColor="@color/back"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" android:paddingTop="10dp" android:paddingBottom="10dp">
+
+            <TextView
+                    android:id="@+id/var_to"
+                    android:text="@string/var_to"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:textStyle="bold" android:textColor="@color/back"/>
+
+            <TextView
+                    android:id="@+id/val_to"
+                    android:text="@string/val_to"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" android:textColor="@color/back"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:background="@color/grey"
+                android:layout_width="match_parent"
+                android:layout_height="1dp" android:paddingTop="10dp">
+
+        </LinearLayout>
+
+        <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" android:paddingTop="10dp">
+
+            <TextView
+                    android:id="@+id/var_total"
+                    android:text="@string/var_total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:textColor="@color/colorPrimary"/>
+
+            <TextView
+                    android:id="@+id/val_total"
+                    android:text="@string/val_total"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" android:textColor="@color/back" android:textStyle="bold"
+                    android:gravity="end"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
